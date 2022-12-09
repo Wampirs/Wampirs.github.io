@@ -4,7 +4,7 @@ import './NavBar.css';
 
 const navigation = {
     links: [
-        { name: "About Me", to: "/about" },
+        { name: "About Me ", to: "/about" },
         { name: "Blog", to: "/blog" },
         { name: "Developement", to: "/dev" },
         { name: "Graphic Design", to: "/design" },
