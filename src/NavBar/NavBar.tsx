@@ -2,6 +2,7 @@ import React from 'react';
 import Item from './NavBarItem';
 import './NavBar.css';
 
+
 const navigation = {
     links: [
         { name: "About Me ", to: "/about" },

@@ -7,12 +7,12 @@ const NavBarItem = (props: {
     //img: string
 }) => {
     return (
-        <div className="NavBarItem">
-            <a href={props.link}>
+        <a className = "NavBarRef" href = {props.link}>
+            <div className="NavBarItem">
                 {props.name}
-            </a>
-        </div>
-  );
+            </div>
+        </a>
+    );
 }
 
 export default NavBarItem;
