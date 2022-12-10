@@ -26,7 +26,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${secrets.API_TOKEN_GITHUB}
       with:
-        source-directory: ./cvproject/build/
+        source-directory: ./build/
         destination-github-username: 'Wampirs'
         destination-repository-name: 'Wampirs.github.io'
         user-email: ${secrets.EMAIL}
