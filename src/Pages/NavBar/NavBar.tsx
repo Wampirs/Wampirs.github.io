@@ -1,21 +1,19 @@
 import React from 'react';
 import { Outlet, NavLink } from "react-router-dom";
 
-import Item from './NavBarItem';
 import './NavBar.css';
 
 
-const NavBar = () => {
+const NavBar = (Navigation: { NavItems:Array<{ name: string, path: string, component: JSX.Element, icon: string }>} ) => {
+
+    const CreateNavLinks: any = () => Navigation.NavItems.map((NavItem: { name: string, path: string, icon: string }) =>
+        <NavLink to={NavItem.path}>
+            <p>{NavItem.name}</p>
+        </NavLink>)
     return (
         <>
-            <nav className="nav">
-                <NavLink to={'/'} >
-                    <p>Home</p>
-                </NavLink>
-
-                <NavLink to={'/projects'}>
-                    <p>Projects</p>
-                </NavLink>
+            <nav className="NavBar">
+                <CreateNavLinks/> 
             </nav>
             <Outlet/>
         </>
