@@ -4,7 +4,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 
-import NavBar from './Pages/NavBar/NavBar';
+import NavBar from './Pages/Layout/Layout';
 import Home from './Pages/Home/Home';
 import Projects from './Pages/Projects/Projects';
 
