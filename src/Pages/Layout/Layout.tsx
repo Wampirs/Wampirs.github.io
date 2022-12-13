@@ -16,6 +16,7 @@ const NavBar = (Navigation: { NavItems:Array<{ name: string, path: string, compo
             <nav className="NavBar">
                 <CreateNavLinks/> 
             </nav>
+            <div className="PlaceHolder"/>
             <Outlet />
         </div>
     )
